@@ -1,0 +1,23 @@
+{
+  "name": "tech_blog",
+  "version": "1.0.0",
+  "description": "Tech Blog",
+  "main": "index.js",
+  "scripts": {
+    "start": "set NODE_DEV=production & node server",
+    "dev": "nodemon server"
+  },
+  "author": "Moustafa Bendib",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.2",
+    "mongoose": "^5.8.9",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
