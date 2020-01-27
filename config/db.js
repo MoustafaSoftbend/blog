@@ -10,12 +10,6 @@ const connectDB = async () => {
         useUnifiedTopology: true
     });
 
-    conn.connection.on("error", () => {
-        console.log("> error occurred from the database");
-    });
-    conn.connection.once("open", () => {
-        console.log("> successfully opened the database");
-    });
 
     console.log(`MongoDB connected at: ${conn.connection.host} `.red.underline.bold);
 }
