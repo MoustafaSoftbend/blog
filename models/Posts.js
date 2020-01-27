@@ -28,4 +28,6 @@ const PostSchema = new mongoose.Schema({
         ref: 'User',
         required: true
     }
-})
+});
+
+module.exports = mongoose.model('Post', PostSchema);

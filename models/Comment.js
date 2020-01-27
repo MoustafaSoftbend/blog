@@ -22,4 +22,6 @@ const CommentSchema = mongoose.Schema({
         ref: 'Post',
         required: true
     }
-})
+});
+
+module.exports = mongoose.model('Comment', CommentSchema);
