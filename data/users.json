@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Corey Bless",
+        "email": "corey@example.com",
+        "password": "123456"
+    },
+    {
+        "name": "Susan",
+        "email": "susan@example.com",
+        "password": "123456"
+    },
+    {
+        "name": "Mark Jhonson",
+        "email": "matkn@example.com",
+        "password": "123456"
+    }
+    {
+        "name": "Marry White",
+        "email": "marry@example.com",
+        "password": "123456"
+    }
+    {
+        "name": "Steve Bolton",
+        "email": "Steven@example.com",
+        "password": "123456"
+    }
+    {
+        "name": "Rick Northamn",
+        "email": "rick@example.com",
+        "password": "123456"
+    }
+]
