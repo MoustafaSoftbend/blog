@@ -25,9 +25,12 @@ const PostSchema = new mongoose.Schema({
     
     author: {
         type: mongoose.Schema.ObjectId,
-        ref: 'User',
-        required: true
+        ref: 'User'
     }
+});
+
+PostSchema.pre('post', async function(req, res, next) {
+    this.author = req.user._id;
 });
 
 module.exports = mongoose.model('Post', PostSchema);

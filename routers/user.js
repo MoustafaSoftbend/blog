@@ -8,9 +8,19 @@ const {
     deleteUser
 } = require('../controllers/user');
 
+
+
 const advancedResults = require('../middleware/advancedResults');
 const User = require('../models/User');
-const {protect} = require('../middleware/auth')
+const postsRouter = require('./posts');
+const commentRouter = require('./comments')
+const {protect, authorize} = require('../middleware/auth');
+
+router.use(protect);
+router.use(authorize('admin'));
+
+router.use('/:userId/posts', postsRouter)
+router.use('/:userId/comments', commentRouter)
 
 router.route('/')
     .get(advancedResults(User),getUsers)

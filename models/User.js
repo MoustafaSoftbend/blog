@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const bcrypt= require('bcryptjs');
+const crypto = require('crypto');
 const jwt = require('jsonwebtoken');
 
 const UserSchema = new mongoose.Schema({
@@ -32,6 +33,11 @@ const UserSchema = new mongoose.Schema({
 
     resetPasswordToken: String,
     resetPasswordExpire: Date,
+    emailToken: String,
+    verified: {
+        type: Boolean,
+        default: false
+    },
     created_date: {
         type: Date,
         default: Date.now
@@ -61,13 +67,37 @@ UserSchema.pre('save', async function(next) {
 // Sign JWT and return
 UserSchema.methods.getSignedJwtToken = function() {
     return jwt.sign({id: this._id}, process.env.JWT_SECRET, {
-        expiresIn: process.env.JWT_EXPPIRE
+        expiresIn: process.env.JWT_EXPIRE
     });
 }
 
 // Match user entered password to hashed password in database
 UserSchema.methods.matchPassword = async function(enteredPassword) {
     return await bcrypt.compare(enteredPassword, this.password);
+}
+
+// Create reset password token
+UserSchema.methods.setResetPasswordToken = async function() {
+
+    // Generate Hash
+    const resetToken = crypto.randomBytes(20).toString('hex');
+
+    // Hash Token and set to reset password field
+    this.resetPasswordToken = crypto.createHash('sha256').update(resetToken).digest('hex');
+
+    // Set Expire
+    this.resetPasswordExpire = Date.now() + 10*60*1000;
+
+    return resetToken
+}
+
+//Create email token
+UserSchema.methods.setEmailToken = async function() {
+    const token  = crypto.randomBytes(20).toString('hex');
+
+    this.emailToken = crypto.createHash('sha256').update(token).digest('hex');
+
+    return token
 }
 
 module.exports = mongoose.model('User', UserSchema);
