@@ -14,7 +14,7 @@ const {getComments} = require('../controllers/comments')
 const Posts = require('../models/Posts');
 const commentRouter = require('./comments');
 const advancedResults = require('../middleware/advancedResults');
-const {protect} = require('../middleware/auth');
+const {protect, authorize} = require('../middleware/auth');
 
 router.use('/:postId/comments', commentRouter)
 
@@ -23,12 +23,12 @@ router.route('/')
         path:'author',
         select: 'name'    
     }), getPosts)
-    .post(protect, addPost);
+    .post(protect,authorize('admin','publisher') , addPost);
 
 
 router.route('/:id')
     .get(getPost)
-    .put(protect,updatePost)
-    .delete(protect,deletePost);
+    .put(protect,authorize('admin','publisher'),updatePost)
+    .delete(protect,authorize('admin','publisher'),deletePost);
 
 module.exports = router;

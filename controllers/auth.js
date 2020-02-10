@@ -209,7 +209,6 @@ exports.confirmUser = asyncHandler(async(req, res, next) => {
 
     const token = req.params.token
     const hashedToken  = crypto.createHash('sha256').update(token).digest('hex');
-    console.log(hashedToken)
     const user = await User.findOne({emailToken: hashedToken});
 
     if (!user) {

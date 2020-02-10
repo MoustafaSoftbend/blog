@@ -7,7 +7,7 @@ const ErrorResponse = require('../utils/ErrorResponse');
 // @route    GET /api/v1/auth/users/:userId/posts
 // @access   Public
 exports.getPosts = asyncHandler(async (req, res, next) => {
-    if (req.body.userId) {
+    if (req.params.userId) {
         const posts = await Posts.find({user: req.params.userId});
         return res.status(200).json({
             succes: true,
@@ -86,6 +86,10 @@ exports.updatePost = asyncHandler(async (req, res, next) => {
 exports.deletePost = asyncHandler(async (req, res, next) => {
 
     const post = await Posts.findById(req.params.id);
+
+    if (!post) {
+        return next(new ErrorResponse('Post Not Found', 404));
+    }
 
     if (req.user.id !== post.author.toString() && req.user.role !== 'admin') {
         return next (new ErrorResponse('User not authorized to make changes to post', 401))
