@@ -1,10 +1,12 @@
 const Express = require('express');
+const fileUpload = require('express-fileupload')
 const dotEnv = require('dotenv').config({ path: './config/config.env' });
 const morgan = require('morgan');
 const colors = require('colors');
 const connectDB = require('./config/db');
 const errorHandler = require('./middleware/error');
 const cookieParser = require('cookie-parser');
+const path = require('path')
 const mongoSanitize = require('express-mongo-sanitize');
 const helmet = require('helmet');
 const xss = require('xss-clean');
@@ -22,7 +24,10 @@ connectDB();
 const app = Express();
 
 // Body parser
-app.use(Express.json())
+app.use(Express.json());
+
+// File upload
+app.use(fileUpload());
 
 //  Cookie parser
 app.use(cookieParser());
@@ -47,6 +52,8 @@ app.use(limiter);
 //Prevent http param polution
 app.use(hpp());
 
+// Add static files
+app.use('/static', Express.static(path.join(__dirname, 'public')));
 
 // Plug Morgan middleware
 if(process.env.NODE_ENV == 'development'){

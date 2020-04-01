@@ -16,6 +16,11 @@ const PostSchema = new mongoose.Schema({
         unique: true,
     },
 
+    image: {
+        type: String,
+        default: 'default_post.png'
+    },
+
     category: String,
 
     created_date: {

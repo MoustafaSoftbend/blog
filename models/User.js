@@ -31,6 +31,11 @@ const UserSchema = new mongoose.Schema({
         select: false
     },
 
+    image: {
+        type: String,
+        default: 'default_user.png'
+    },
+
     resetPasswordToken: String,
     resetPasswordExpire: Date,
     emailToken: String,

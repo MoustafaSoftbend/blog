@@ -3,6 +3,9 @@ const router = express.Router();
 
 const {protect, authorize} = require('../middleware/auth');
 
+const uploadImage = require('../middleware/uploadImage');
+const User = require('../models/User');
+
 const {
     regUser,
     login,
@@ -12,7 +15,8 @@ const {
     sendResetToken,
     updatePassword,
     resetPassword,
-    confirmUser
+    confirmUser,
+    addImage
 }  = require ('../controllers/auth');
 
 router.route('/register').post(regUser);
@@ -32,6 +36,8 @@ router.route('/user/forgotpassword').post(sendResetToken);
 router.route('/user/resetpassword/:token').put(resetPassword);
 
 router.route('/user/updatepassword').put(protect,updatePassword);
+
+router.route('/user/image').put(protect,uploadImage(User),addImage);
 
 
 module.exports = router;

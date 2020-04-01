@@ -6,6 +6,11 @@ const CommentSchema = mongoose.Schema({
         required: [true, 'Please Enter text for comment']
     },
 
+    image: {
+        type: String,
+        default: 'default_comment.png'
+    },
+
     created_date: {
         type: Date,
         default: Date.now

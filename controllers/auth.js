@@ -4,6 +4,7 @@ const ErrorResponse = require('../utils/ErrorResponse');
 const jwt = require('jsonwebtoken');
 const sendMail = require('../utils/sendEmail');
 const crypto = require('crypto');
+const path = require('path');
 
 
 // @desc     Register User
@@ -222,6 +223,49 @@ exports.confirmUser = asyncHandler(async(req, res, next) => {
 
     sendTokenResponse(user, 200, res)
 });
+
+// @desc     Upload image
+// @route    PUT /api/v1/auth/image
+// @access   Private
+exports.addImage = asyncHandler(async(req,res,next) => {
+
+
+    // const user = await User.findById(req.user.id);
+
+    // if (!user) {
+    //     return next(new ErrorResponse('Not allowed to do the operation', 401))
+    // }
+
+    // const file = req.files.file
+
+    // if(!file.mimetype.startsWith('image')) {
+    //     return next(new ErrorResponse('File type not suported', 400));
+    // }
+    
+    
+    // if(file.size > 100000) {
+    //     return next(new ErrorResponse('File size ecceeds limit', 400))
+    // }
+
+    // file.name = `Photo_${user.id}${path.parse(file.name).ext}`
+
+
+    // file.mv(`${process.env.STATIC_PATH}/${file.name}`, async err => {
+    //     if (err) {
+    //         console.log(err)
+    //         return next(new ErrorResponse('Server Error', 500))
+    //     }
+
+    //     await User.findByIdAndUpdate(req.user.id, {image: file.name})
+
+    //     res.status(200).json({
+    //         success: true,
+    //         data: file.name
+    //     })
+    // }) 
+
+    res.status(200).json(res.uploadImage);
+})
 
 
 

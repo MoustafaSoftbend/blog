@@ -103,3 +103,9 @@ exports.deletePost = asyncHandler(async (req, res, next) => {
     })
 });
 
+// @desc     Upload image
+// @route    PUT /api/v1/posts/:id/image
+// @access   Private
+exports.addImage = asyncHandler(async (req, res, next) => {
+    res.status(200).json(res.uploadImage)
+})
