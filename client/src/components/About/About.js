@@ -1,11 +1,9 @@
-import React, { Fragment, useEffect } from 'react'
+import React, {Fragment, useEffect} from 'react'
 import Section1 from './Section1'
-import Section2 from './Section2'
 import Navbar from '../layout/Navbar'
 
-export default function Post() {
-
-    useEffect(() => {
+function About() {
+    useEffect(()=> {
         const hamburger = document.querySelector('.hamburger-menu');
         const navbar = document.querySelector("#navbar");
         const nav_list = document.querySelector('.navbar-nav'); 
@@ -22,11 +20,12 @@ export default function Post() {
         }
     }, [])
     return (
-    <Fragment>
-        <Navbar tab='post' />
+      <Fragment>
+        <Navbar tab='about' />
         <Section1 />
-        <Section2 />
-    </Fragment>
+      </Fragment>
+
     )
-    
 }
+
+export default About

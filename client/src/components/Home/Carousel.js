@@ -9,7 +9,7 @@ const Carousel = () => {
     return (
         <Fragment>
     <section id="carousel" className="carousel">
-     <Navbar />
+     <Navbar tab={"index"} />
       <div className="carousel-viewport">
         <div className="carousel-slide" id="slide1">
           <img id="1" className="slide-img" src={Slide1} alt="" />
