@@ -1,4 +1,4 @@
-import React, {Fragment, Link, useEffect} from 'react';
+import React, {Fragment, Link, useEffect, useLayoutEffect} from 'react';
 import { connect } from 'react-redux';
 import {PropTypes} from 'prop-types'
 import Slide1 from '../../img/slide1.jpg'
@@ -10,16 +10,17 @@ import { fetchPosts } from '../../redux/actions/PostsAction';
 import SliderFunction from '../../utils/SliderFunction'
 
   const Carousel = ({fetchPosts, Posts}) => {
-    
+
   useEffect(() => {
     if (Object.keys(Posts).length ==0){
       fetchPosts()
     }
-    
+
     if  ((Object.keys(Posts).length) > 0) {
     console.log('slide!!!')
     SliderFunction()
-    } 
+    }
+
 
   }, [Posts])
     return (
@@ -43,7 +44,7 @@ import SliderFunction from '../../utils/SliderFunction'
                             </div>
                           </div>
                       `;
-                
+
             })}
 
               {/* <div className="carousel-slide" id="slide2">

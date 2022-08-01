@@ -1,9 +1,9 @@
 function SliderFunction() {
     window.addEventListener("DOMContentLoaded", (e) => {
-        
+
         const slide = document.querySelector(".carousel-viewport");
         const hamburger = document.querySelector('.hamburger-menu');
-        const nav_list = document.querySelector('.navbar-nav'); 
+        const nav_list = document.querySelector('.navbar-nav');
         let imagesLength;
         let height;
         const nav_btn = document.querySelector("a.navigation");
@@ -11,7 +11,7 @@ function SliderFunction() {
         let halt = false;
         let recordedPageId;
         let recordIndex = 0;
-    
+
         window.addEventListener("scroll", function (e) {
           if (window.scrollY == 0) {
             navbar.style.background = "transparent";
@@ -25,9 +25,9 @@ function SliderFunction() {
             nav_list.style.transition = "all 0.5s";
             nav_list.style.transform = "translateX(-10%)";
           })
-    
+
         }
-    
+
         slide.addEventListener("mouseenter", function (e) {
           console.log("Halt");
           recordedPageId = e;
@@ -44,7 +44,7 @@ function SliderFunction() {
             }
           }
         });
-    
+
         nav_btn.addEventListener("click", function () {
           let index = recordIndex++;
           imagesLength = document.querySelectorAll(".slide-img").length;
@@ -54,7 +54,7 @@ function SliderFunction() {
           }
           slide.scroll(0, height * index);
         });
-    
+
         function slider(index = 0) {
           imagesLength = document.querySelectorAll(".slide-img").length;
           console.log(document.querySelector(".slide-img"))
@@ -71,12 +71,12 @@ function SliderFunction() {
             slide.scroll(0, height * index);
             index++;
           }
-    
+
           setTimeout(function () {
             slider(index);
           }, 2500);
         }
-    
+
         const fnCall = setInterval(slider(), 2500);
     });
 }
