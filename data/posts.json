@@ -1,0 +1,23 @@
+[
+    {
+        "title" :"Hello world One" ,
+        "content":"Hello from the first post" ,
+        "category": "entertainment"
+    },
+    {
+        "title" :"Hello world Two" ,
+        "content":"Hello from the first post Two" ,
+        "category": "sport"
+    },
+    {
+        "title" :"Hello world Three" ,
+        "content":"Hello from the first post Three" ,
+        "category": "health"
+    },
+    {
+        "title" :"Hello world Four" ,
+        "content":"Hello from the first post Four" ,
+        "category": "health"
+    }
+
+]

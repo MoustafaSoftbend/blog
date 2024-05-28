@@ -1,11 +1,13 @@
 const fs =require ('fs');
 const mongoose = require('mongoose');
 const colors = require('colors');
-const dotEnv = require('dotenv');
+const dotEnv = require('dotenv').config({ path: './config/config.env' });
 
-dotEnv.config({path: './config/configenv'});
+console.log(process.argv)
 
 const User = require('./models/User');
+const Post = require('./models/Posts');
+const Comment = require('./models/Comment');
 
 
 mongoose.connect(process.env.DB_URI, {
@@ -16,12 +18,14 @@ mongoose.connect(process.env.DB_URI, {
 });
 
 const users = JSON.parse(fs.readFileSync(`${__dirname}/data/users.json`, 'utf-8'));
+const posts = JSON.parse(fs.readFileSync(`${__dirname}/data/posts.json`, 'utf-8'));
+const comments = JSON.parse(fs.readFileSync(`${__dirname}/data/comments.json`, 'utf-8'));
 
 
 //  Import data
-const importData = async () => {
+const importData = async (Model, resource) => {
     try {
-        await User.create(users);
+        await Model.create(resource);
         console.log('Data Imported...'.green.inverse);
         process.exit();
     } catch(err) {
@@ -40,9 +44,31 @@ const deletetData = async () => {
     }
 }
 
-if (process.arg[2] === 'i') {
-    importData();
-}else if (process.arg[2] === 'd') {
-    deletetData();
+if (process.argv[2] === 'i') {
+    switch (process.argv[3]){
+        case 'u':
+            console.log("....creating users")
+            importData(User, users);
+            break;
+        case 'p':
+            importData(Post, posts);
+            break;
+        case 'c':
+            importData(Comment, comments);
+            break;
+
+    }
+}else if (process.argv[2] === 'd') {
+    switch (process.argv[3]){
+        case 'u':
+            deletetData(User, users);
+            break;
+        case 'p':
+            deletetData(Post, posts);
+            break;
+        case 'c':
+            deletetData(Comment, comments);
+            break;
+    }
 }
  
