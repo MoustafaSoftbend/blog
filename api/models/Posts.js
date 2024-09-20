@@ -41,7 +41,7 @@
 // module.exports = mongoose.model('Post', PostSchema);
 
 const { v4: uuidv4 } = require("uuid");
-const docClient = require("../config/db");
+const docClient = require("../../config/db");
 
 class Posts {
   constructor({

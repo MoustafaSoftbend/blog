@@ -1,5 +1,5 @@
 const ErrorResponse = require('../utils/ErrorResponse');
-const User = require('../models/User');
+const User = require('../api/models/User');
 const path = require('path')
 
 const uploadImage = (model) => async (req,res, next) => {

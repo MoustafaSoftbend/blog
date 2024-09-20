@@ -111,7 +111,7 @@ const AWS = require("aws-sdk");
 const bcrypt = require("bcryptjs");
 const crypto = require("crypto");
 const jwt = require("jsonwebtoken");
-const docClient = require("../config/db");
+const docClient = require("../../config/db");
 const { v4: uuidv4 } = require("uuid");
 
 const USERS_TABLE = "Users";

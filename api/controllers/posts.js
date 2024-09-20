@@ -111,8 +111,8 @@
 // });
 
 const Posts = require("../models/Posts");
-const asyncHandler = require("../middleware/async");
-const ErrorResponse = require("../utils/ErrorResponse");
+const asyncHandler = require("../../middleware/async");
+const ErrorResponse = require("../../utils/ErrorResponse");
 
 exports.getAllPosts = asyncHandler(async (req, res, next) => {
   const params = {

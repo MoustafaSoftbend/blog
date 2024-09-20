@@ -64,9 +64,9 @@
 // })
 
 const AWS = require("aws-sdk");
-const asyncHandler = require("../middleware/async");
-const sendMail = require("../utils/sendEmail");
-const ErrorResponse = require("../utils/ErrorResponse");
+const asyncHandler = require("../../middleware/async");
+const sendMail = require("../../utils/sendEmail");
+const ErrorResponse = require("../../utils/ErrorResponse");
 
 // @desc     Get All Users
 // @route    GET /api/v1/auth/users

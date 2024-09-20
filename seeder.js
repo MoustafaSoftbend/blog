@@ -5,9 +5,9 @@ const dotEnv = require('dotenv').config({ path: './config/config.env' });
 
 console.log(process.argv)
 
-const User = require('./models/User');
-const Post = require('./models/Posts');
-const Comment = require('./models/Comment');
+const User = require('./api/models/User');
+const Post = require('./api/models/Posts');
+const Comment = require('./api/models/Comment');
 
 
 mongoose.connect(process.env.DB_URI, {
