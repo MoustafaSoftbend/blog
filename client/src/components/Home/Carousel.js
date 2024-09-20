@@ -28,7 +28,7 @@ import SliderFunction from '../../utils/SliderFunction'
         <section id="carousel" className="carousel">
         <Navbar tab={"index"} />
           <div className="carousel-viewport">
-            {Posts.forEach((post,index) =>{
+            {/* {Posts.forEach((post,index) =>{
                 document.querySelector(".carousel-viewport").innerHTML +=`
                           <div class="carousel-slide" id="slide${index}">
                             <img id="${index}" class="slide-img" src=${Slide1} alt="" />
@@ -45,9 +45,9 @@ import SliderFunction from '../../utils/SliderFunction'
                           </div>
                       `;
 
-            })}
+            })} */}
 
-              {/* <div className="carousel-slide" id="slide2">
+              <div className="carousel-slide" id="slide2">
                 <img id="2" className="slide-img" src={Slide2} alt="" />
                 <div className="overlay"></div>
                 <div className="slider-container">
@@ -85,7 +85,7 @@ import SliderFunction from '../../utils/SliderFunction'
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </p>
                 </div>
-              </div> */}
+              </div>
           </div>
           <a href="#" className="navigation"><span></span></a>
         </section>
