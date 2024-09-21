@@ -12,55 +12,55 @@ function SectionZero() {
                     <div class="side-content side-right">
                     <div class="card">
                         <img src={Slide1} class="card-img" alt="" />
-                        <a href="#" class="category">SMARTPHONE</a>
+                        <a href="/post" class="category">SMARTPHONE</a>
 
-                        <a href="#" class="card-title">
+                        <a href="/post" class="card-title">
                         Brave privacy browser 'mistake' added affiliate links to crypto
                         URLs
                         </a>
 
                         <div class="card-footer">
                         <img src={Slide1} alt="" class="author-card-img" />
-                        <a href="#" class="author-card-name">Tom Johnson</a>
+                        <a href="/post" class="author-card-name">Tom Johnson</a>
                         <p class="card-date">20/12/2020</p>
                         </div>
                     </div>
                     <div class="card">
                         <img src={Slide2} class="card-img" alt="" />
-                        <a href="#" class="card-title">
+                        <a href="/post" class="card-title">
                         Brave privacy browser 'mistake' added affiliate links to crypto
                         URLs
                         </a>
 
                         <div class="card-footer">
                         <img src={Slide1} alt="" class="author-card-img" />
-                        <a href="#" class="author-card-name">Tom Johnson</a>
+                        <a href="/post" class="author-card-name">Tom Johnson</a>
                         <p class="card-date">20/12/2020</p>
                         </div>
                     </div>
                     <div class="card">
                         <img src={Slide3} class="card-img" alt="" />
-                        <a href="#" class="card-title">
+                        <a href="/post" class="card-title">
                         Brave privacy browser 'mistake' added affiliate links to crypto
                         URLs
                         </a>
 
                         <div class="card-footer">
                         <img src={Slide1} alt="" class="author-card-img" />
-                        <a href="#" class="author-card-name">Tom Johnson</a>
+                        <a href="/post" class="author-card-name">Tom Johnson</a>
                         <p class="card-date">20/12/2020</p>
                         </div>
                     </div>
                     <div class="card">
                         <img src={Slide4} class="card-img" alt="" />
-                        <a href="#" class="card-title">
+                        <a href="/post" class="card-title">
                         Brave privacy browser 'mistake' added affiliate links to crypto
                         URLs
                         </a>
 
                         <div class="card-footer">
                         <img src={Slide1} alt="" class="author-card-img" />
-                        <a href="#" class="author-card-name">Tom Johnson</a>
+                        <a href="/post" class="author-card-name">Tom Johnson</a>
                         <p class="card-date">20/12/2020</p>
                         </div>
                     </div>
@@ -69,7 +69,7 @@ function SectionZero() {
                     <h1 class="lead">Featured Posts</h1>
                     <div class="post">
                         <img src={Slide1} class="post-img" alt="" />
-                        <a href="#" class="post-title first-post-title">
+                        <a href="/post" class="post-title first-post-title">
                         Brave privacy browser 'mistake' added affiliate links to crypto
                         URLs
                         </a>
@@ -86,86 +86,86 @@ function SectionZero() {
                         </div>
                         <div class="post-footer">
                         <img src={Slide1} alt="" class="author-post-img" />
-                        <a href="#" class="author-post-name">Tom Johnson</a>
+                        <a href="/post" class="author-post-name">Tom Johnson</a>
                         <p class="post-date">20/12/2020</p>
                         </div>
                     </div>
                     <div class="grid">
                         <div class="card">
                         <img src={Slide1} class="card-img" alt="" />
-                        <a href="#" class="card-title">
+                        <a href="/post" class="card-title">
                             Brave privacy browser 'mistake' added affiliate links to crypto
                             URLs
                         </a>
 
                         <div class="card-footer">
                             <img src={Slide1} alt="" class="author-card-img" />
-                            <a href="#" class="author-card-name">Tom Johnson</a>
+                            <a href="/post" class="author-card-name">Tom Johnson</a>
                             <p class="card-date">20/12/2020</p>
                         </div>
                         </div>
                         <div class="card">
                         <img src={Slide2} class="card-img" alt="" />
 
-                        <a href="#" class="card-title">
+                        <a href="/post" class="card-title">
                             Brave privacy browser 'mistake' added affiliate links to crypto
                             URLs
                         </a>
 
                         <div class="card-footer">
                             <img src={Slide1} alt="" class="author-card-img" />
-                            <a href="#" class="author-card-name">Tom Johnson</a>
+                            <a href="/post" class="author-card-name">Tom Johnson</a>
                             <p class="card-date">20/12/2020</p>
                         </div>
                         </div>
                         <div class="card">
                         <img src={Slide3} class="card-img" alt="" />
 
-                        <a href="#" class="card-title">
+                        <a href="/post" class="card-title">
                             Brave privacy browser 'mistake' added affiliate links to crypto
                             URLs
                         </a>
 
                         <div class="card-footer">
                             <img src={Slide1} alt="" class="author-card-img" />
-                            <a href="#" class="author-card-name">Tom Johnson</a>
+                            <a href="/post" class="author-card-name">Tom Johnson</a>
                             <p class="card-date">20/12/2020</p>
                         </div>
                         </div>
                         <div class="card">
                         <img src={Slide1} class="card-img" alt="" />
-                        <a href="#" class="card-title">
+                        <a href="/post" class="card-title">
                             Brave privacy browser 'mistake' added affiliate links to crypto
                             URLs
                         </a>
 
                         <div class="card-footer">
                             <img src={Slide1} alt="" class="author-card-img" />
-                            <a href="#" class="author-card-name">Tom Johnson</a>
+                            <a href="/post" class="author-card-name">Tom Johnson</a>
                             <p class="card-date">20/12/2020</p>
                         </div>
                         </div>
                         <div class="card">
                         <img src={Slide1} class="card-img" alt="" />
-                        <a href="#" class="card-title">
+                        <a href="/post" class="card-title">
                             Brave privacy browser 'mistake' added affiliate links to crypto
                             URLs
                         </a>
                         <div class="card-footer">
                             <img src={Slide1} alt="" class="author-card-img" />
-                            <a href="#" class="author-card-name">Tom Johnson</a>
+                            <a href="/post" class="author-card-name">Tom Johnson</a>
                             <p class="card-date">20/12/2020</p>
                         </div>
                         </div>
                         <div class="card">
                         <img src={Slide1} class="card-img" alt="" />
-                        <a href="#" class="card-title">
+                        <a href="/post" class="card-title">
                             Brave privacy browser 'mistake' added affiliate links to crypto
                             URLs
                         </a>
                         <div class="card-footer">
                             <img src={Slide1} alt="" class="author-card-img" />
-                            <a href="#" class="author-card-name">Tom Johnson</a>
+                            <a href="/post" class="author-card-name">Tom Johnson</a>
                             <p class="card-date">20/12/2020</p>
                         </div>
                         </div>
@@ -174,53 +174,53 @@ function SectionZero() {
                     <div class="side-content side-left">
                     <div class="card">
                         <img src={Slide1} class="card-img" alt="" />
-                        <a href="#" class="card-title">
+                        <a href="/post" class="card-title">
                         Brave privacy browser 'mistake' added affiliate links to crypto
                         URLs
                         </a>
 
                         <div class="card-footer">
                         <img src={Slide1} alt="" class="author-card-img" />
-                        <a href="#" class="author-card-name">Tom Johnson</a>
+                        <a href="/post" class="author-card-name">Tom Johnson</a>
                         <p class="card-date">20/12/2020</p>
                         </div>
                     </div>
                     <div class="card">
                         <img src={Slide1} class="card-img" alt="" />
-                        <a href="#" class="card-title">
+                        <a href="/post" class="card-title">
                         Brave privacy browser 'mistake' added affiliate links to crypto
                         URLs
                         </a>
 
                         <div class="card-footer">
                         <img src={Slide1} alt="" class="author-card-img" />
-                        <a href="#" class="author-card-name">Tom Johnson</a>
+                        <a href="/post" class="author-card-name">Tom Johnson</a>
                         <p class="card-date">20/12/2020</p>
                         </div>
                     </div>
                     <div class="card">
                         <img src={Slide1} class="card-img" alt="" />
-                        <a href="#" class="card-title">
+                        <a href="/post" class="card-title">
                         Brave privacy browser 'mistake' added affiliate links to crypto
                         URLs
                         </a>
 
                         <div class="card-footer">
                         <img src={Slide1} alt="" class="author-card-img" />
-                        <a href="#" class="author-card-name">Tom Johnson</a>
+                        <a href="/post" class="author-card-name">Tom Johnson</a>
                         <p class="card-date">20/12/2020</p>
                         </div>
                     </div>
                     <div class="card">
                         <img src={Slide1} class="card-img" alt="" />
-                        <a href="#" class="card-title">
+                        <a href="/post" class="card-title">
                         Brave privacy browser 'mistake' added affiliate links to crypto
                         URLs
                         </a>
 
                         <div class="card-footer">
                         <img src={Slide1} alt="" class="author-card-img" />
-                        <a href="#" class="author-card-name">Tom Johnson</a>
+                        <a href="/post" class="author-card-name">Tom Johnson</a>
                         <p class="card-date">20/12/2020</p>
                         </div>
                     </div>

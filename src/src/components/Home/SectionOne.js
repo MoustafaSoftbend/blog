@@ -20,7 +20,7 @@ const SectionOne = () => {
                 class="post-card-img first-post-card-img"
               />
               <div class="post-card-body">
-                <a href="#" class="post-card-title">
+                <a href="/post" class="post-card-title">
                   Brave privacy browser 'mistake' added affiliate links to
                   crypto URLs
                 </a>
@@ -36,7 +36,7 @@ const SectionOne = () => {
                     alt=""
                     class="author-post-img first-author-post-img"
                   />
-                  <a href="#" class="author-post-name">Tom Johnson</a>
+                  <a href="/post" class="author-post-name">Tom Johnson</a>
                   <small class="post-date">20/12/2020</small>
                 </div>
               </div>
@@ -47,7 +47,7 @@ const SectionOne = () => {
             <div class="post-card-content">
               <img src={Slide2} alt="" class="post-card-img" />
               <div class="post-card-body">
-                <a href="#" class="post-card-title">
+                <a href="/post" class="post-card-title">
                   Brave privacy browser 'mistake' added affiliate links to
                   crypto URLs
                 </a>
@@ -57,7 +57,7 @@ const SectionOne = () => {
                 </p>
                 <div class="post-card-footer">
                   <img src={Slide2} alt="" class="author-post-img" />
-                  <a href="#" class="author-post-name">Tom Johnson</a>
+                  <a href="/post" class="author-post-name">Tom Johnson</a>
                   <small class="post-date">20/12/2020</small>
                 </div>
               </div>
@@ -67,7 +67,7 @@ const SectionOne = () => {
             <div class="post-card-content">
               <img src={Slide3} alt="" class="post-card-img" />
               <div class="post-card-body">
-                <a href="#" class="post-card-title">
+                <a href="/post" class="post-card-title">
                   Brave privacy browser 'mistake' added affiliate links to
                   crypto URLs
                 </a>
@@ -77,7 +77,7 @@ const SectionOne = () => {
                 </p>
                 <div class="post-card-footer">
                   <img src={Slide2} alt="" class="author-post-img" />
-                  <a href="#" class="author-post-name">Tom Johnson</a>
+                  <a href="/post" class="author-post-name">Tom Johnson</a>
                   <small class="post-date">20/12/2020</small>
                 </div>
               </div>
@@ -87,7 +87,7 @@ const SectionOne = () => {
             <div class="post-card-content">
               <img src={Slide3} alt="" class="post-card-img" />
               <div class="post-card-body">
-                <a href="#" class="post-card-title">
+                <a href="/post" class="post-card-title">
                   Brave privacy browser 'mistake' added affiliate links to
                   crypto URLs
                 </a>
@@ -97,7 +97,7 @@ const SectionOne = () => {
                 </p>
                 <div class="post-card-footer">
                   <img src={Slide2} alt="" class="author-post-img" />
-                  <a href="#" class="author-post-name">Tom Johnson</a>
+                  <a href="/post" class="author-post-name">Tom Johnson</a>
                   <small class="post-date">20/12/2020</small>
                 </div>
               </div>
@@ -112,7 +112,7 @@ const SectionOne = () => {
                 class="post-card-img first-post-card-img"
               />
               <div class="post-card-body">
-                <a href="#" class="post-card-title">
+                <a href="/post" class="post-card-title">
                   Brave privacy browser 'mistake' added affiliate links to
                   crypto URLs
                 </a>
@@ -128,7 +128,7 @@ const SectionOne = () => {
                     alt=""
                     class="author-post-img first-author-post-img"
                   />
-                  <a href="#" class="author-post-name">Tom Johnson</a >
+                  <a href="/post" class="author-post-name">Tom Johnson</a >
                   <small class="post-date">20/12/2020</small>
                 </div>
               </div>
@@ -138,7 +138,7 @@ const SectionOne = () => {
             <div class="post-card-content">
               <img src={Slide1} alt="" class="post-card-img" />
               <div class="post-card-body">
-                <a href="#" class="post-card-title">
+                <a href="/post" class="post-card-title">
                   Brave privacy browser 'mistake' added affiliate links to
                   crypto URLs
                 </a>
@@ -148,7 +148,7 @@ const SectionOne = () => {
                 </p>
                 <div class="post-card-footer">
                   <img src={Slide2} alt="" class="author-post-img" />
-                  <a href="#" class="author-post-name">Tom Johnson</a>
+                  <a href="/post" class="author-post-name">Tom Johnson</a>
                   <small class="post-date">20/12/2020</small>
                 </div>
               </div>
@@ -158,7 +158,7 @@ const SectionOne = () => {
             <div class="post-card-content">
               <img src={Slide2} alt="" class="post-card-img" />
               <div class="post-card-body">
-                <a href="#" class="post-card-title">
+                <a href="/post" class="post-card-title">
                   Brave privacy browser 'mistake' added affiliate links to
                   crypto URLs
                 </a>
@@ -168,7 +168,7 @@ const SectionOne = () => {
                 </p>
                 <div class="post-card-footer">
                   <img src={Slide2} alt="" class="author-post-img" />
-                  <a href="#" class="author-post-name">Tom Johnson</a>
+                  <a href="/post" class="author-post-name">Tom Johnson</a>
                   <small class="post-date">20/12/2020</small>
                 </div>
               </div>
@@ -178,7 +178,7 @@ const SectionOne = () => {
             <div class="post-card-content">
               <img src={Slide3} alt="" class="post-card-img" />
               <div class="post-card-body">
-                <a href="#" class="post-card-title">
+                <a href="/post" class="post-card-title">
                   Brave privacy browser 'mistake' added affiliate links to
                   crypto URLs
                 </a>
@@ -188,7 +188,7 @@ const SectionOne = () => {
                 </p>
                 <div class="post-card-footer">
                   <img src={Slide2} alt="" class="author-post-img" />
-                  <a href="#" class="author-post-name">Tom Johnson</a>
+                  <a href="/post" class="author-post-name">Tom Johnson</a>
                   <small class="post-date">20/12/2020</small>
                 </div>
               </div>
@@ -198,7 +198,7 @@ const SectionOne = () => {
             <div class="post-card-content">
               <img src={Slide4} alt="" class="post-card-img" />
               <div class="post-card-body">
-                <a href="#" class="post-card-title">
+                <a href="/post" class="post-card-title">
                   Brave privacy browser 'mistake' added affiliate links to
                   crypto URLs
                 </a>
@@ -208,7 +208,7 @@ const SectionOne = () => {
                 </p>
                 <div class="post-card-footer">
                   <img src={Slide2} alt="" class="author-post-img" />
-                  <a href="#" class="author-post-name">Tom Johnson</a>
+                  <a href="/post" class="author-post-name">Tom Johnson</a>
                   <small class="post-date">20/12/2020</small>
                 </div>
               </div>

@@ -52,7 +52,7 @@ import SliderFunction from '../../utils/SliderFunction'
                 <img id="2" className="slide-img" src={Slide2} alt="" />
                 <div className="overlay"></div>
                 <div className="slider-container">
-                  <a href="#" className="slider-title">
+                  <a href="/post" className="slider-title">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit,
                     voluptatibus.
                   </a>
@@ -65,7 +65,7 @@ import SliderFunction from '../../utils/SliderFunction'
                 <img id="3" className="slide-img" src={Slide3} alt="" />
                 <div className="overlay"></div>
                 <div className="slider-container">
-                  <a href="#" className="slider-title">
+                  <a href="/post" className="slider-title">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit,
                     voluptatibus.
                   </a>
@@ -78,7 +78,7 @@ import SliderFunction from '../../utils/SliderFunction'
                 <img id="4" className="slide-img" src={Slide4} alt="" />
                 <div className="overlay"></div>
                 <div className="slider-container">
-                  <a href="#" className="slider-title">
+                  <a href="/post" className="slider-title">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit,
                     voluptatibus.
                   </a>
@@ -88,7 +88,7 @@ import SliderFunction from '../../utils/SliderFunction'
                 </div>
               </div>
           </div>
-          <a href="#" className="navigation"><span></span></a>
+          <a href="/post" className="navigation"><span></span></a>
         </section>
       </Fragment>
 
