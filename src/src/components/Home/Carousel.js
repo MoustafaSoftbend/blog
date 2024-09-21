@@ -1,6 +1,6 @@
 import React, {Fragment, Link, useEffect, useLayoutEffect} from 'react';
 import { connect } from 'react-redux';
-import {PropTypes} from 'prop-types'
+import PropTypes from 'prop-types';
 import Slide1 from '../../img/slide1.jpg'
 import Slide2 from '../../img/slide2.jpg'
 import Slide3 from '../../img/slide3.jpg'
@@ -12,14 +12,15 @@ import SliderFunction from '../../utils/SliderFunction'
   const Carousel = ({fetchPosts, Posts}) => {
 
   useEffect(() => {
-    if (Object.keys(Posts).length ==0){
-      fetchPosts()
-    }
+    // if (Object.keys(Posts).length ==0){
+    //   fetchPosts()
+    // }
 
-    if  ((Object.keys(Posts).length) > 0) {
-    console.log('slide!!!')
+    // if  ((Object.keys(Posts).length) > 0) {
+    // console.log('slide!!!')
+    // SliderFunction()
+    // }
     SliderFunction()
-    }
 
 
   }, [Posts])
